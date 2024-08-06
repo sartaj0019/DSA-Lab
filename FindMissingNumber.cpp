@@ -2,12 +2,15 @@
 using namespace std;
 void missing(int arr[],int size)
 {
+    // XOR of all the elements present in the given array.
     int a=arr[0];
     for(int i=0;i<size;i++)
     {
         a=a^arr[i];
     }
-
+    
+    // XOR of all the consective elements starting from the first element of the given array.
+    
     int b=arr[0];
     int n=arr[0];
     for(int i=0;i<size+1;i++)
